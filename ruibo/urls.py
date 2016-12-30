@@ -32,6 +32,13 @@ urlpatterns = [
     url(r'^show_cars_10/$', views.show_cars_10),
     url(r'^show_cars_11/$', views.show_cars_11),
     url(r'^show_cars_12/$', views.show_cars_12),
+    #20161230
+    url(r'^show_cars_13/$', views.show_cars_13),
+    url(r'^show_cars_14/$', views.show_cars_14),
+    url(r'^show_cars_15/$', views.show_cars_15),
+    url(r'^show_cars_16/$', views.show_cars_16),
+    url(r'^show_cars_17/$', views.show_cars_17),
+
     url(r'^contact/$', views.contact_page),
 
 ]

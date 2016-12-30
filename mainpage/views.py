@@ -258,3 +258,96 @@ def show_cars_12(request):
     }
     return render(request, './show_cars/show_cars_12.html', c)
 
+'''
+20161030
+'''
+
+@csrf_protect
+def show_cars_13(request):
+    if request.method == "POST":
+        send_mail(
+            'testing django emailing',
+            'this message is from: '+ request.POST.get("name")+';\n'+
+            "this message is sent by: " + request.POST.get("email") + ';\n' +
+            "this message says: " + request.POST.get("message") + '.\n',
+            settings.EMAIL_HOST_USER,
+            ['314046334@qq.com'],
+            fail_silently=False,
+        )
+    theform = MessageForm()
+    c = {
+        'the_form': theform,
+    }
+    return render(request, './show_cars/20161230/show_cars_13.html', c)
+
+@csrf_protect
+def show_cars_14(request):
+    if request.method == "POST":
+        send_mail(
+            'testing django emailing',
+            'this message is from: '+ request.POST.get("name")+';\n'+
+            "this message is sent by: " + request.POST.get("email") + ';\n' +
+            "this message says: " + request.POST.get("message") + '.\n',
+            settings.EMAIL_HOST_USER,
+            ['314046334@qq.com'],
+            fail_silently=False,
+        )
+    theform = MessageForm()
+    c = {
+        'the_form': theform,
+    }
+    return render(request, './show_cars/20161230/show_cars_14.html', c)
+
+@csrf_protect
+def show_cars_15(request):
+    if request.method == "POST":
+        send_mail(
+            'testing django emailing',
+            'this message is from: '+ request.POST.get("name")+';\n'+
+            "this message is sent by: " + request.POST.get("email") + ';\n' +
+            "this message says: " + request.POST.get("message") + '.\n',
+            settings.EMAIL_HOST_USER,
+            ['314046334@qq.com'],
+            fail_silently=False,
+        )
+    theform = MessageForm()
+    c = {
+        'the_form': theform,
+    }
+    return render(request, './show_cars/20161230/show_cars_15.html', c)
+
+@csrf_protect
+def show_cars_16(request):
+    if request.method == "POST":
+        send_mail(
+            'testing django emailing',
+            'this message is from: '+ request.POST.get("name")+';\n'+
+            "this message is sent by: " + request.POST.get("email") + ';\n' +
+            "this message says: " + request.POST.get("message") + '.\n',
+            settings.EMAIL_HOST_USER,
+            ['314046334@qq.com'],
+            fail_silently=False,
+        )
+    theform = MessageForm()
+    c = {
+        'the_form': theform,
+    }
+    return render(request, './show_cars/20161230/show_cars_16.html', c)    
+
+@csrf_protect
+def show_cars_17(request):
+    if request.method == "POST":
+        send_mail(
+            'testing django emailing',
+            'this message is from: '+ request.POST.get("name")+';\n'+
+            "this message is sent by: " + request.POST.get("email") + ';\n' +
+            "this message says: " + request.POST.get("message") + '.\n',
+            settings.EMAIL_HOST_USER,
+            ['314046334@qq.com'],
+            fail_silently=False,
+        )
+    theform = MessageForm()
+    c = {
+        'the_form': theform,
+    }
+    return render(request, './show_cars/20161230/show_cars_17.html', c)  
