@@ -1,0 +1,756 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href={%  static "mainpage/style/images/favicon.png" %}>
+<title>成都睿博名车</title>
+<!-- Bootstrap core CSS -->
+<link href={% static "mainpage/style/css/bootstrap.css" %} rel="stylesheet">
+<link href={% static "mainpage/style/css/settings.css"%} rel="stylesheet">
+<link href={% static "mainpage/style/css/owl.carousel.css"%} rel="stylesheet">
+<link href={% static "mainpage/style/js/google-code-prettify/prettify.css" %} rel="stylesheet">
+<link href={% static "mainpage/style/js/fancybox/jquery.fancybox.css" %} rel="stylesheet" type="text/css" media="all" />
+<link href={% static "mainpage/style/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" %} rel="stylesheet" type="text/css" />
+<link href={% static "mainpage/style.css" %} rel="stylesheet">
+<link href={% static "mainpage/style/css/color/blue.css" %} rel="stylesheet">
+<link href={% static "mainpage/style/type/fontello.css" %} rel="stylesheet">
+<link href={% static "mainpage/style/type/budicons.css" %} rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src={% static "mainpage/style/js/html5shiv.js" %}></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+<script type="text/javascript">
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}</script>
+
+<script type="text/javascript">
+    function send_email() { // inside script tags
+        //sleep(3000)
+        alert('感谢您的参与，我们会尽快与您联系！');
+        window.location.href = "http://www.readin.win";
+        return 0;
+    }
+</script>
+<div class="body-wrapper">
+  <div class="navbar default">
+    <div class="navbar-header">
+      <div class="container">
+        <!--
+		<div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand" href="index.html"><img src={% static "mainpage/style/images/logo.png" %} alt="" data-src={% static "mainpage/style/images/logo.png" %} data-ret={% static "mainpage/style/images/logo@2x.png" %} class="retina" /></a> </div>
+        -->
+		<nav class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#services">公司宗旨</a></li>
+            <li><a href="#portfolio">产品展示</a></li>
+            <li><a href="#about">服务介绍</a></li>
+            <li><a href="#pricing">关于我们</a></li>
+            <li><a href="/contact/">联系我们</a></li>
+            <!--<li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Features</a>-->
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a href="#">Blog</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog.html">Medium Image Layout</a></li>
+                    <li><a href="blog2.html">Grid Blog</a></li>
+                    <li><a href="blog3.html">Grid Blog with Sidebar</a></li>
+                    <li><a href="blog4.html">Classic Blog</a></li>
+                    <li><a href="blog-post.html">Blog Post</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu"><a href="#">Portfolio Posts</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="portfolio-post.html">Post with Wide Slider</a></li>
+                    <li><a href="portfolio-post2.html">Post with Half Slider</a></li>
+                    <li><a href="portfolio-post3.html">Post with Carousel Gallery</a></li>
+                    <li><a href="portfolio-post4.html">Post with Multiple Images</a></li>
+                    <li><a href="portfolio-post5.html">Post with Half Images</a></li>
+                    <li><a href="portfolio-post6.html">Post with Fullscreen Slider</a></li>
+                    <li><a href="portfolio-post7.html">Post with Fullwidth Video</a></li>
+                    <li><a href="portfolio-post8.html">Post with Half Video</a></li>
+                  </ul>
+                </li>
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="headings.html">Headings</a></li>
+                <li><a href="footer.html">Footer with Widgets</a></li>
+                <li><a href="pricing.html">Pricing Table</a></li>
+                <li><a href="fontello.html">Font Icons - Fontello</a></li>
+               <li><a href="budicon.html">Font Icons - Budicon</a></li>
+				<li><a href="shared on weidea.net">More</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+  <!--/.navbar -->
+  <div id="home" class="section">
+    <div class="light-wrapper">
+      <div class="fullscreenbanner-container revolution">
+        <div class="fullscreenbanner">
+          <ul>
+
+            <li data-transition="fade"> <img src={% static "mainpage/style/images/art/back1.jpg" %} alt="" />
+              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">Hello We're Rainbow</div>
+              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">您好，我们是成都睿博名车，竭诚为您服务～</div>
+              <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
+                <div class="smooth"><a href="#contact" class="btn btn-border-lite">Get in Touch</a></div>
+              </div>
+            </li>
+
+              <li data-transition="fade"> <img src={% static "mainpage/style/images/art/back2.jpg" %} alt="" />
+              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">Rainbow is a creative team</div>
+              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">我们是一个具有活力的团队，擅长创新和思考，只求给您带来完美的购车体验</div>
+              <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
+                <div class="smooth"><a href="#contact" class="btn btn-border-lite">Get in Touch</a></div>
+              </div>
+            </li>
+
+              <li data-transition="fade"> <img src={% static "mainpage/style/images/art/back3.jpg" %} alt="" />
+              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">Your needs are important</div>
+              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">您的需求和喜好对我们来说非常重要，是我们唯一的追求</div>
+              <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
+                <div class="smooth"><a href="#contact" class="btn btn-border-lite">Get in Touch</a></div>
+              </div>
+            </li>
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+        <!-- /.fullscreenbanner --> 
+      </div>
+      <!-- /.fullscreenbanner-container --> 
+    </div>
+  </div>
+  <div id="services" class="section anchor">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">Our Principles</h2>
+        <p class="lead main text-center">我们的理念是，严谨、真实、透明和创新。</p>
+        <div class="row text-center services-1">
+          <div class="col-sm-3">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-image"></i> </div>
+              <h3>Rigorous</h3>
+              <p>对待工作我们细致认真，一丝不苟，从不在细节上有任何马虎，也从来不会推卸应付的责任，力求每一个环节都做到最好。</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-browser-3"></i> </div>
+              <h3>Real</h3>
+              <p>我们致力于向您呈现最真实的车辆状况信息，我们保证，绝不有所隐瞒，绝不虚报任何数字，绝不对已经发布的报告做出任何不合理的改动。</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
+              <h3>Transparent</h3>
+              <p>我们的车价信息一定公开透明，只求您能买得放心，我们才能卖得安心。只要您能高高兴兴的购车，我们就能开开心心的工作。</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-radio"></i> </div>
+              <h3>Creative</h3>
+              <p>我们的工作无时无刻不需要我们充分发挥我们的创造力，使得我们能够从容应对您日益增长的需求，已经市场中日益激烈的竞争。</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.services --> 
+        
+      </div>
+      <!-- /.container --> 
+    </div>
+  </div>
+  <!-- /#home -->
+  
+  <div class="parallax parallax1">
+    <div class="container inner text-center">
+      <h1 class="share-button">Click <span class="colored">&</span> Share the Love</h1>
+      <div class="share-links">
+        <ul>
+          <li><a class="btn share-facebook" href="#">微信</a></li>
+          <li><a class="btn share-twitter" href="#">领英</a></li>
+          <li><a class="btn share-pinterest" href="#">微博</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.parallax -->
+  
+  <div id="portfolio" class="section anchor">
+    <div class="dark-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">Our Awesome Vehicles</h2>
+        <p class="lead main text-center">我们现有各种各样的车型，一定能够满足您的需要。</p>
+        <div class="grid-portfolio fix-portfolio">
+          <ul class="filter">
+            <li><a class="active" href="#" data-filter="*">全部车型</a></li>
+
+            <li><a href="#" data-filter=".web">在售车型</a></li>
+            <li><a href="#" data-filter=".graphic">已售车型</a></li>
+
+            <!--li><a href="#" data-filter=".photo">类型三</a></li>
+            <li><a href="#" data-filter=".motion">类型四</a></li-->
+          </ul>
+          
+          <!-- /filter -->
+          
+          <ul class="content-slider items">
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="/show_cars_1/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/selling/001/1 (3).jpg" %} alt="" /> </a></figure>
+            </li>
+
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="/show_cars_2/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/selling/002/1 (1).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <!--                     已售                     -->
+
+            <li class="item thumb graphic">
+                <figure><a href="/" data-contenturl="/show_cars_3/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (1).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_4/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (2).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_5/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (3).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_6/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (4).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_7/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (5).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_8/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (6).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_9/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (7).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_10/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (8).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_11/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (9).jpg" %} alt="" /> </a></figure>
+            </li>
+
+              <li class="item thumb graphic">
+                <figure><a href="#" data-contenturl="/show_cars_12/" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/vehicles/sold/1 (10).jpg" %} alt="" /> </a></figure>
+            </li>
+
+             <!--                     已售                     -->
+
+            <!--li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post2.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Half Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p2.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="portfolio-post3.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Carousel Gallery</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p3.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="portfolio-post4.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Multiple Images</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p4.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post5.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Multiple Half Images</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p5.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post6.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullscreen Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p6.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p7.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="portfolio-post8.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Half Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p8.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p9.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="portfolio-post2.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Half Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p10.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post3.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Carousel Gallery</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p11.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post4.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Multiple Images</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p12.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post5.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Multiple Half Images</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p13.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post6.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullscreen Slider</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p14.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb web">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p15.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p16.jpg" %} alt="" /> </a></figure>
+            </li>			
+            <li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p17.jpg" %} alt="" /> </a></figure>
+            </li>			
+            <li class="item thumb graphic">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p18.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p19.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p20.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb photo">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p21.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p22.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p23.jpg" %} alt="" /> </a></figure>
+            </li>
+            <li class="item thumb motion">
+              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+                <div class="text-overlay">
+                  <div class="info">Fullwidth Video</div>
+                </div>
+                <img src={% static "mainpage/style/images/art/p24.jpg" %} alt="" /> </a></figure>
+            </li-->
+
+			
+          </ul>
+          <!-- /.items --> 
+        </div>
+        <!-- /.portfolio --> 
+      </div>
+    </div>
+  </div>
+  <!-- /#portfolio -->
+  
+  <div class="parallax parallax2 work-together">
+    <div class="container inner text-center">
+      <h1>We Create Unique <span class="colored">&</span> Gorgeous Things</h1>
+      <div class="divide10"></div>
+      <div class="smooth"><a href="#contact" class="btn btn-border-lite">联系我们吧！</a></div>
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.parallax -->
+  
+  <div id="about" class="section anchor">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">Our Services</h2>
+        <p class="lead main text-center">顾客是我们一切活动的中心。</p>
+        <div class="row">
+
+        </div>
+        <div class="divide60"></div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="section-title">
+              <h3>Our Services</h3>
+            </div>
+            <p>我们的服务项目包括高端二手车收购、出售；车辆寄售业务；代淘车业务；汽车保险业务；汽车金融，汽车贷款，汽车抵押等业务。</p>
+            <div class="divide10"></div>
+            <ul class="progress-list">
+              <li>
+                <p>二手车收售<em>90%</em></p>
+                <div class="progress plain">
+                  <div class="bar" style="width: 90%;"></div>
+                </div>
+              </li>
+              <li>
+                <p>车辆寄售 <em>80%</em></p>
+                <div class="progress plain">
+                  <div class="bar" style="width: 80%;"></div>
+                </div>
+              </li>
+              <li>
+                <p>代淘车业务 <em>85%</em></p>
+                <div class="progress plain">
+                  <div class="bar" style="width: 85%;"></div>
+                </div>
+              </li>
+              <li>
+                <p>汽车金融：保险、贷款、抵押等<em>85%</em></p>
+                <div class="progress plain">
+                  <div class="bar" style="width: 80%;"></div>
+                </div>
+              </li>
+            </ul>
+            <!-- /.progress-list --> 
+          </div>
+          <div class="col-sm-4">
+            <div class="section-title">
+              <h3>Why Choose Us?</h3>
+            </div>
+            <div class="divide5"></div>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne"> 精益求精的客户服务</a> </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">我们的服务宗旨一贯是以客户为中心，同时会用我们最大的诚心力求让客户感受到独家定制办理的购车体验。<br>一切目标都从客户的需求出发，最终做到能够使您淘车放心、买车安心、卖车舒心，实现您一站式的购车流程。</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTwo"> 高标准高品质，二手车商界的一股清泉 </a> </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body"> 力求价格透明并保证车源优质，不收事故车、过水车，也绝不改动车辆行程数等等数据，车况最真实的体现。 </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseThree"> 严格细致的工作流程 </a> </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body"> 收车、审车、验车、卖车、淘车等等工作流程专人负责，流程细节化、操作精准化。 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="section-title">
+              <h3>Our Management Principles</h3>
+            </div>
+            <div class="services-2">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="bm20">
+                    <div class="icon"> <i class="budicon-camera-1 icn"></i> </div>
+                    <!-- /.icon -->
+                    <div class="text">
+                      <h4>顾客第一</h4>
+                      <p>顾客是我们一切活动的中心。我们以客户的要求标准来评判我们的表现。</p>
+                    </div>
+                    <!-- /.text --> 
+                  </div>
+                  <!-- /.div -->
+                  <div class="bm20">
+                    <div class="icon"> <i class="budicon-video-1 icn"></i> </div>
+                    <!-- /.icon -->
+                    <div class="text">
+                      <h4>团队协作</h4>
+                      <p>我们坚信集体配合和沟通的重要，我们珍视公司所有人员的团结和合作。</p>
+                    </div>
+                    <!-- /.text --> 
+                  </div>
+                  <!-- /.div -->
+                  <div class="bm20">
+                    <div class="icon"> <i class="budicon-radio icn"></i> </div>
+                    <!-- /.icon -->
+                    <div class="text">
+                      <h4>合作发展</h4>
+                      <p>与各界同行合作，在合作中快速发展；与广大用户合作，在服务中不断提高自身水平；注重公司内部合作，强调团队精神，相互信任和有效沟通。</p>
+                    </div>
+                    <!-- /.text --> 
+                  </div>
+                  <!-- /.div --> 
+                </div>
+                <!-- /.col-sm-12 --> 
+              </div>
+              <!-- /.row --> 
+            </div>
+            <!-- /.col-services --> 
+          </div>
+        </div>
+        <!--hr /-->
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#about -->
+  
+  <div class="parallax parallax4 facts">
+    <div class="container inner">
+      <div class="row text-center services-3">
+        <div class="col-sm-3">
+          <div class="col-wrapper">
+            <div class="icon-border bm10"> <i class="budicon-video-2"></i> </div>
+            <h4>7518</h4>
+            <p>Shots Taken</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="col-wrapper">
+            <div class="icon-border bm10"> <i class="budicon-coffee"></i> </div>
+            <h4>3472</h4>
+            <p>Cups of Coffee</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="col-wrapper">
+            <div class="icon-border bm10"> <i class="budicon-video"></i> </div>
+            <h4>2184</h4>
+            <p>Movies Watched</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="col-wrapper">
+            <div class="icon-border bm10"> <i class="budicon-award-1"></i> </div>
+            <h4>4523</h4>
+            <p>Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.parallax -->
+
+
+  <div id="pricing" class="section anchor">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">About Our Company</h2>
+        <p class="lead main text-center">我们的公司具有朝气与活力，热情洋溢并且踏实勤奋。</p>
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>Our Working Place</h2>
+            <p class="lead">"A man is not old as long as he is seeking something. A man is not old until regrets take the place of dreams."</p>
+            <p>成都睿博赛特汽车服务有限公司成立于2016年7月11日，是一家围绕着为消费者提供相关服务为主的汽车服务公司；公司始终坚持"严谨、真实、透明"的企业宗旨，以"真诚服务"为立业之本的团体精神，并形成一套完整的二手车收购、出售；车辆寄售；代淘车、汽车金融、车辆保险的服务构架。</p>
+            <p>公司本着以客户三个满意为基本原则：“对待车辆要求真实透明， 对待客户真诚真实 ”,不断加强企业的综合竞争力，公司在竞争中求发展，而我们作为中国二手车市场中的一部分，正在为提升客户的生活质量、改善生活品质而努力工作。</p>
+          </div>
+          <div class="col-sm-4">
+            <figure><img src={% static "mainpage/style/images/art/about.jpg" %} alt="" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="parallax parallax3 customers">
+    <div class="container inner text-center">
+      <div class="testimonials owl-carousel thin">
+        <div class="item">
+          <blockquote>
+            <p>The greatest test of courage on earth is to bear defeat without losing heart.<br>世界上对勇气的最大考验是忍受失败而不丧失信心。<small>Nikolas Brooten</small></p>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote>
+            <p>Don't aim for success if you want it; just do what you love and believe in, and it will come naturally.<br>如果你想要成功，不要去追求成功；尽管做你自己热爱的事情并且相信它，成功自然到来。<small>Coriss Ambady</small></p>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote>
+            <p>Only they who fulfill their duties in everyday matters will fulfill them on  great occasions.<br>只有在日常生活中尽责的人才会在重大时刻尽责。<small>Barclay Widerski</small></p>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote>
+            <p>Victory won''t come to me unless I go to it.<br>胜利是不会向我们走来的，我必须自己走向胜利。<small>Elsie Spear</small></p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <!-- /.container --> 
+  </div>
+  <!-- /.parallax -->
+
+     
+  </div>
+  <!-- /#contact -->
+  <footer class="footer">
+    <div class="container inner" style="text-align:center">
+      <p align="middle">© 2014 Rainbow. All rights reserved. Powered by Unitech.site - Bill.</p>
+
+    </div>
+    <!-- .container --> 
+  </footer>
+  <!-- /footer --> 
+</div>
+<!-- .body-wrapper --> 
+    <!--
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+	-->
+<script src={% static "mainpage/style/js/jquery.min.js" %}></script>
+<script src={% static "mainpage/style/js/bootstrap.min.js"%}></script>
+<script src={% static "mainpage/style/js/twitter-bootstrap-hover-dropdown.min.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.themepunch.plugins.min.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.themepunch.revolution.min.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.easytabs.min.js"%}></script>
+<script src={% static "mainpage/style/js/owl.carousel.min.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.isotope.min.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.fitvids.js"%}></script>
+<script src={% static "mainpage/style/js/jquery.fancybox.pack.js"%}></script>
+<script src={% static "mainpage/style/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"%}></script>
+<script src={% static "mainpage/style/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"%}></script>
+<script src={% static "mainpage/style/js/jquery.slickforms.js"%}></script>
+<script src={% static "mainpage/style/js/instafeed.min.js"%}></script>
+<script src={% static "mainpage/style/js/retina.js"%}></script>
+<script src={% static "mainpage/style/js/google-code-prettify/prettify.js"%}></script>
+<script src={% static "mainpage/style/js/scripts.js"%}></script>
+
+
+
+
+</body>
+</html>
